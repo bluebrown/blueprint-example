@@ -1,0 +1,11 @@
+git:
+  provider: github.com
+  user: bluebrown
+
+message: Hello, World!
+
+service:
+  enabled: true
+  name: labels
+
+snippet: "{{ .ProjectName }}"
