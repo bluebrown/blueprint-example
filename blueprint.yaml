@@ -2,7 +2,7 @@ input:
   - message
 
 exclude:
-  - path: /svc/{{.Values.service.name}}
+  - pattern: /svc/{{.Values.service.name}}
     condition: "{{ not .Values.service.enabled }}"
 
 raw:

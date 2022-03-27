@@ -3,7 +3,7 @@ package main
 import (
     "fmt"
     {{ if .Values.service.enabled }}
-    "{{ .Values.git.provider }}/{{ .Values.git.user }}/{{ .ProjectName }}/svc/{{.Values.service.name }}"
+    "{{ .Values.git.provider }}/{{ .Values.git.user }}/{{ .Project.Name }}/svc/{{.Values.service.name }}"
     {{- end }}
 )
 

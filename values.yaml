@@ -8,4 +8,6 @@ service:
   enabled: true
   name: labels
 
-snippet: "{{ .ProjectName }}"
+# this is intended to be used with the tpl function
+# see doc.go for more information
+snippet: "{{ .Project.Name }}"
